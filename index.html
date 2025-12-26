@@ -42,7 +42,7 @@
         /* Camera Preview Vandiep */
         #camera-preview {
             position: absolute; top: 15px; right: 15px;
-            width: 120px; height: 90px;
+            width: 300px; height: 225px;
             border: 2px solid rgba(255,0,0,0.5); 
             transform: scaleX(-1); opacity: 0.6; border-radius: 8px;
         }
@@ -78,7 +78,7 @@
 
     <div id="canvas-container"></div>
     <video class="input_video" style="display:none"></video>
-    <canvas id="camera-preview" width="120" height="90"></canvas>
+    <canvas id="camera-preview" width="300" height="225"></canvas>
 
     <script>
         // ==========================================
@@ -320,7 +320,7 @@
             lCtx.font = 'bold 120px "Segoe UI", sans-serif';
             lCtx.fillStyle = '#FF69B4'; lCtx.textAlign = 'center';
             lCtx.shadowColor = "#FF1493"; lCtx.shadowBlur = 40; 
-            lCtx.fillText("I LOVE YOU ❤️", 512, 130);
+            lCtx.fillText("PÉ IU ZỢ NHÈOOOOOO ❤️", 512, 130);
             const loveTex = new THREE.CanvasTexture(loveCanvas);
             const loveMat = new THREE.MeshBasicMaterial({ map: loveTex, transparent: true, blending: THREE.AdditiveBlending });
             loveMesh = new THREE.Mesh(new THREE.PlaneGeometry(70, 18), loveMat);
